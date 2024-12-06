@@ -4,14 +4,16 @@ import { useAuth } from '../providers/AuthContext';
 
 function App() {
   const { authData } = useAuth();
-
-  if (!authData) {
+  const data = localStorage.getItem('accessToken');
+  if (!authData  && !data) {
     return <Navigate to="/" />;
   }
   return (
-    <div className="App">
-      <Outlet />
-    </div>
+    <>
+      {
+        data ? <Outlet /> : <h1>Invalid Login</h1>
+      }
+    </>
   );
 }
 

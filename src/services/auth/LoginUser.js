@@ -2,7 +2,6 @@ const BASE_URL = 'https://dummyjson.com';
 
 export const LoginUser =async (username,password,expiresInMins = 30) => {
     try{
-        // biome-ignore lint/style/useTemplate: <explanation>
         const response = await fetch(BASE_URL+'/auth/login',{
             method : 'POST',
             headers : {'Content-Type' : 'application/json' },
