@@ -14,9 +14,9 @@ const Sidebar = () => {
           active: true,
         },
         {
-          name: 'Widgets',
+          name: 'Products',
           icon: FaTh,
-          link: 'widgets',
+          link: 'products',
           active: false,
         },
         {

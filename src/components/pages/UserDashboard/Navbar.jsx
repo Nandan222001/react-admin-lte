@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(true);
 
   const toggleSidebar = () => {
     setIsNavExpanded((prev) => !prev);

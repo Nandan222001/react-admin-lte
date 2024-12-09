@@ -6,7 +6,7 @@ import AdminDashboard from '../components/pages/dashboard/AdminDashboard';
 import SuperAdminDashboard from '../components/pages/dashboard/SuperAdminDashboard';
 import Login from '../components/Login';
 import Home from '../components/pages/UserDashboard/Home/Home';
-import Widgets from '../components/pages/UserDashboard/Widgets/Widgets';
+import Products from '../components/pages/UserDashboard/Products/Products';
 
 const router = createBrowserRouter([
 
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
       children: [
         { path: "guest-dashboard", element: <GuestDashboard /> },
         { path: "user-dashboard", element: <UserDashboard /> , children : [
-          { path : "user-dashboard" , element : <Home /> },
-          { path : "widgets" , element : <Widgets />},
+          { path : "home" , element : <Home /> },
+          { path : "products" , element : <Products />},
         ], },
         { path: "admin-dashboard", element: <AdminDashboard /> },
         { path: "super-admin-dashboard", element: <SuperAdminDashboard /> },
